@@ -1,0 +1,68 @@
+:root {
+  --primary-color: 18, 28, 44;
+  --secondary-color: 228, 237, 219;
+
+  --success-color: 48, 84, 118;
+  --fault-color: 199, 84, 125; 
+
+  --primary-font: "Roboto", sans-serif; 
+  --game-font: "PT Mono", sans-serif; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: stretch;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 2em;
+  background: rgb(var(--primary-color));
+  color: rgb(var(--secondary-color));
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+.app-container {
+  padding: 1em;
+  min-height: 100vh;
+  background: rgba(var(--main-bg-color), 0.8);
+  color: rgba(var(--main-tx-color), 0.6);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 20px;
+  }
+}
