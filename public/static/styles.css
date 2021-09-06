@@ -42,27 +42,46 @@ h4 {
 }
 
 .app-container {
-  padding: 1em;
   min-height: 100vh;
-  background: rgba(var(--main-bg-color), 0.8);
-  color: rgba(var(--main-tx-color), 0.6);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+article.game {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--game-font);
+  font-size: 1em;
+}
+
+article.game > main {
+  border: 0.2em solid rgb(var(--secondary-color));
+  padding: 1em;
+  border-radius: 0.4em;
+  margin: 1em 0;
+}
+
+
 @media screen and (min-width: 480px) {
 }
 
 @media screen and (min-width: 960px) {
   body {
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  article.game > main {
+    max-width: 50%;
   }
 }
 
 @media screen and (min-width: 1300px) {
   body {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
